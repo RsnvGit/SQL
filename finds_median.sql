@@ -33,3 +33,4 @@ update country_vaccination_stats set daily_vaccinations=@z where Id=@n and daily
 
 set @n=@n+1
 end
+select * from country_vaccination_stats
