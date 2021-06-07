@@ -31,5 +31,5 @@ begin
 set @z=(select median from @NewTable where Id=@n)
 update country_vaccination_stats set daily_vaccinations=@z where Id=@n and daily_vaccinations is null
 
-@n=@n+1
+set @n=@n+1
 end
